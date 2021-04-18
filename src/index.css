@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@import url(//db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy+ExtraBold);
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.eot");
+  src: url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.svg#Gilroy ExtraBold")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot");
+  src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.svg#Gilroy")
+      format("svg");
+}
+
+:root {
+  --background-color: #b49d9a;
+  --background-color-header: black;
+  --text-color-black: black;
+  --footer-background-color: #183330;
+  --light-pink-text-color: #e9d1ca;
+  --burger-menu-button-color: #a68c86;
+  --outline-color: #d1d1d1;
+  --wrapper-background-color: #a6a6a6;
+  --nav-text-color: #fdfefd;
+}
