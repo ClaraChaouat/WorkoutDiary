@@ -104,8 +104,8 @@ class LandingPage extends Component {
             <div className="nav-text">
               <div>Work</div>
               <div>Out</div>
-              <div>Diary</div>
-              <div>Record©</div>
+              <div>Record</div>
+              <div>Diary©</div>
             </div>
           </div>
         </div>
