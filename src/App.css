@@ -91,12 +91,12 @@
   font-size: 40px;
   color: var(--light-pink-text-color);
   -webkit-text-stroke: 1px #fff;
+ 
 }
 
 .aside-content {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  text-align: start;
 }
 
 .aside-title,
@@ -113,10 +113,12 @@
 }
 
 .aside-text-effect {
+
   position: relative;
   color: var(--light-pink-text-color);
   -webkit-text-stroke: 1px #fff;
   font-size: 40px;
+  line-height: normal;
 }
 
 .aside-text-effect:before {
@@ -125,21 +127,25 @@
   top: 0;
   left: 0;
   height: 0;
+  right:0;
   color: var(--footer-background-color);
   -webkit-text-stroke: 1px var(--footer-background-color);
   white-space: nowrap;
   transition: 0.8s;
   overflow: hidden;
+  line-height: normal;
 }
 
 .aside-text-effect:hover:before {
   height: 100%;
+  line-height: normal;
 }
 
 .aside-span-effect {
   position: relative;
   color: var(--light-pink-text-color);
   -webkit-text-stroke: 2px #fff;
+  
 }
 
 .aside-span-effect:before {
