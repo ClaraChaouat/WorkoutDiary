@@ -50,7 +50,7 @@ class LandingPage extends Component {
       <div className="wrapper">
         <div className="header">
           <AliceCarousel
-            autoPlay={true}
+            autoPlay={false}
             autoPlayInterval={7500}
             infinite={true}
             animationType="fadeout"
