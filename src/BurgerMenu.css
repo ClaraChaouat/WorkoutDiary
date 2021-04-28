@@ -4,8 +4,8 @@
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  left: 16px;
+  top: 86px;
 }
 .bm-burger-bars {
   background: var(--burger-menu-button-color);

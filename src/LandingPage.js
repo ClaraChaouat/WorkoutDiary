@@ -3,28 +3,28 @@ import "./App.css";
 
 import hashtag from "./images/hashtag.svg";
 import AliceCarousel from "react-alice-carousel";
-import image1 from "./images/img1.jpeg";
-import image2 from "./images/img2.jpeg";
-import image3 from "./images/img3.jpeg";
-import image4 from "./images/img4.jpeg";
-import image4bis from "./images/img4bis.jpg";
-import image5 from "./images/img5.jpeg";
-import image7 from "./images/img7.jpeg";
-import image8 from "./images/img8.jpeg";
-import image9 from "./images/img9.jpeg";
-import image10 from "./images/img10.jpeg";
-import image12 from "./images/img12.jpeg";
-import image13 from "./images/img13.jpeg";
-import image14 from "./images/img14.jpeg";
-import image15 from "./images/img15.jpeg";
-import image16 from "./images/img16.jpeg";
-import image17 from "./images/img17.png";
-import image18 from "./images/img18.jpeg";
-import image20 from "./images/img20.png";
-import image21 from "./images/img21.jpeg";
-import image24 from "./images/img24.jpg";
-import image25 from "./images/img25.png";
-import image26 from "./images/img26.png";
+// import image1 from "./images/img1.jpeg";
+// import image2 from "./images/img2.jpeg";
+// import image3 from "./images/img3.jpeg";
+// import image4 from "./images/img4.jpeg";
+// import image4bis from "./images/img4bis.jpg";
+// import image5 from "./images/img5.jpeg";
+// import image7 from "./images/img7.jpeg";
+// import image8 from "./images/img8.jpeg";
+// import image9 from "./images/img9.jpeg";
+// import image10 from "./images/img10.jpeg";
+// import image12 from "./images/img12.jpeg";
+// import image13 from "./images/img13.jpeg";
+// import image14 from "./images/img14.jpeg";
+// import image15 from "./images/img15.jpeg";
+// import image16 from "./images/img16.jpeg";
+// import image17 from "./images/img17.png";
+// import image18 from "./images/img18.jpeg";
+// import image20 from "./images/img20.png";
+// import image21 from "./images/img21.jpeg";
+// import image24 from "./images/img24.jpg";
+// import image25 from "./images/img25.png";
+// import image26 from "./images/img26.png";
 import heart from "./images/heart.svg";
 import linkedinIcon from "./images/linkedin.svg";
 import mailIcon from "./images/envelope.svg";
@@ -49,8 +49,11 @@ class LandingPage extends Component {
     return (
       <div className="wrapper">
         <div className="header">
+        <div className="header-logo">
+            #WORD
+          </div>
           <AliceCarousel
-            autoPlay={false}
+            autoPlay={true}
             autoPlayInterval={7500}
             infinite={true}
             animationType="fadeout"
@@ -100,7 +103,7 @@ class LandingPage extends Component {
 
         <div className="nav">
           <div className="nav-wrapper">
-            <div className="nav-title"># WORD</div>
+            <div className="nav-title">#WORD</div>
             <div className="nav-text">
               <div>Work</div>
               <div>Out</div>
@@ -110,8 +113,23 @@ class LandingPage extends Component {
           </div>
         </div>
         <div className="section">
-          <AliceCarousel
-            autoPlay={true}
+          <div className="section-wrapper">
+            <div className="section-title">
+              TRACK YOUR PERFORMANCES <br></br> TO SEE <br></br> THE DIFFERENCES
+            </div>
+            <div className="section-text">
+              Recording your performances for each of your work out session is the key of progress and consequently of success.
+              WORD helps you to record, track and therefore have an accurate overview of your progress.
+              Enter your number of reps, the weights and all the information which can be useful to track to become a better athlete
+            </div>
+            <div className="section-buttons">
+              <button>Sign in</button>
+              <button>Log in</button>
+
+            </div>
+          </div>
+          {/*<AliceCarousel
+            autoPlay={false}
             autoPlayInterval={4500}
             infinite={true}
             animationType="fadeout"
@@ -201,7 +219,7 @@ class LandingPage extends Component {
               className="sliderimg img24"
               alt="Men grabbing dumbells"
             />
-          </AliceCarousel>
+          </AliceCarousel>*/}
         </div>
         <div className="aside">
           <div className="aside-content">
@@ -245,7 +263,7 @@ class LandingPage extends Component {
             <img className="heart-icon" src={heart} alt="love" />
             somewhere over the rainbow
           </div>
-          <div className="footer signature">Cléo © 2021</div>
+          <div className="footer signature">Cléo©2021</div>
         </div>
       </div>
     );

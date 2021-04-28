@@ -15,7 +15,7 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: 15% 70% 20%;
+  grid-template-columns: 15% 73% 12%;
   grid-template-rows: 10% 80% 10%;
   text-decoration: 1px solid #ffffff;
   width: 100vw;
@@ -36,10 +36,21 @@
 .header {
   background: var(--background-color-header);
   grid-column: 1/4;
+  grid-row:1;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.header-logo {
+  font:"Gilroy";
+  color: black;
+  -webkit-text-stroke: 1px #fff;
+  font-size: 40px;
+  line-height: normal;
 }
 
 .nav {
-  display: flex;
+ 
   flex-direction: column;
   background: var(--background-color-header);
   background-color: var(--background-color-header);
@@ -50,12 +61,16 @@
   position: relative;
   color: var(--nav-text-color);
   font-family: "Gilroy", sans serif;
+  display: flex;
 }
 
 .nav-wrapper {
   border-top: 2px solid var(--burger-menu-button-color);
   border-bottom: 2px solid var(--burger-menu-button-color);
-  padding: 20px;
+  padding: 20px 0;
+  justify-content: center;
+  height: fit-content;
+  align-items: stretch;
 }
 
 .nav-title {
@@ -74,11 +89,46 @@
 }
 
 .section {
+  position:relative;
   background: white;
   grid-row: 2;
   grid-column: 2;
   font-family: "Gilroy", sans-serif;
-  border-radius: 20px;
+}
+
+.section-wrapper {
+  position:absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+
+}
+
+.section-title{
+  font-family: "Gilroy";
+  font-size: 30px;
+  font-weight:700;
+}
+
+.section-text {
+  padding-top:5px;
+  margin: auto;
+  width: 50%;
+  width:800px;
+}
+
+.section-buttons button {
+  border-radius: 5px;
+  background-color: var(--light-pink-text-color);
+  cursor:pointer;
+  margin-top:7px;
+  font-size:12px;
+  margin-right: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid var(--light-pink-text-color);
+  box-shadow: inset 0 0 0 10em var(--light-pink-text-color)(255, 255, 255, 0.18);
+
 }
 
 .aside {
@@ -225,7 +275,7 @@ div.alice-carousel__next-btn {
 
 .footer-signature {
   margin-bottom: 7px;
-  font-size: 12px;
+  font-size: 10px;
   font-family: "Lucida Handwriting";
 }
 
@@ -239,8 +289,7 @@ div.alice-carousel__next-btn {
 }
 
 blockquote {
-  display: flex;
-  justify-content: flex-end;
+  text-align: end;
 }
 
 .quote1 {
@@ -279,6 +328,8 @@ blockquote {
   padding-right: 10px;
 }
 
+
+
 .sidekick:before,
 .sidekick:after {
   font-family: Calibri;
@@ -294,4 +345,11 @@ blockquote {
 .sidekick:after {
   content: "\201c";
   margin-left: 3px;
+}
+
+.alice-carousel__wrapper {
+  width: 800px !important;
+  display: flex;
+  justify-content: flex-start;
+
 }
