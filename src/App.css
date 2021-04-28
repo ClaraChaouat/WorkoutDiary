@@ -185,6 +185,7 @@
   width: 90%;
   height: 460px;
   border-radius: 25px;
+  object-fit: cover;
 }
 
 .img24 {

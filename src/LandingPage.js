@@ -110,7 +110,7 @@ class LandingPage extends Component {
           </div>
         </div>
         <div className="section">
-          <AliceCarousel
+          {/*<AliceCarousel
             autoPlay={true}
             autoPlayInterval={4500}
             infinite={true}
@@ -124,84 +124,84 @@ class LandingPage extends Component {
               className="sliderimg"
               alt="Handstand-hold-position-man"
             />
-            <img src={image2} className="sliderimg" alt="Weightlifting-man" />
-            <img src={image3} className="sliderimg" alt="junggling-men" />
-            <img src={image4} className="sliderimg" alt="Sissy-squat-men" />
+            <img src={image2} className="sliderimg" alt="Man weightlifting" />
+            <img src={image3} className="sliderimg" alt="Men junggling" />
+            <img src={image4} className="sliderimg" alt="Men doing sissy squat" />
             <img
               src={image4bis}
               className="sliderimg"
-              alt="men-doing-gym-movement"
+              alt="Men doing gym movement"
             />
             <img
               src={image5}
               className="sliderimg"
-              alt="Man-standing-on-hands"
+              alt="Man standing on hands"
             />
             <img
               src={image25}
               className="sliderimg"
-              alt="men-doing-bridge-movement"
+              alt="Men doing bridge movement"
             />
-            <img src={image7} className="sliderimg" alt="handstand-men" />
+            <img src={image7} className="sliderimg" alt="Men doing handstand" />
             <img
               src={image8}
               className="sliderimg"
-              alt="handstand-men-onstairs"
+              alt="Men doing handstand on stairs"
             />
             <img
               src={image21}
               className="sliderimg"
-              alt="men-doing-gym-movement"
+              alt="Men doing gym movement"
             />
             <img
               src={image9}
               className="sliderimg"
-              alt="men-doing-lsit-movement"
+              alt="Men doing lsit movement"
             />
             <img
               src={image10}
               className="sliderimg"
-              alt="men-doing-sissi-squat"
+              alt="Men doing sissi squat"
             />
-            <img src={image13} className="sliderimg" alt="back-flip-men" />
+            <img src={image13} className="sliderimg" alt="Men doing back flip-" />
             <img
               src={image26}
               className="sliderimg img26"
-              alt="weighlifting-men"
+              alt="Men doing weighlifting"
             />
-            <img src={image18} className="sliderimg" alt="men-doing-bridge" />
+            <img src={image18} className="sliderimg" alt="Men doing bridge" />
             <img
               src={image14}
               className="sliderimg"
-              alt="bended-legs-handstand-men"
+              alt="Men doing handstand with bended legs "
             />
             <img
               src={image15}
               className="sliderimg"
-              alt="open-legs-handstand-men"
+              alt="Men doing handstand with open legs"
             />
             <img
               src={image12}
               className="sliderimg"
-              alt="man-doing-sissi-squat"
+              alt="Man doing sissi squat"
             />
             <img
               src={image17}
               className="sliderimg"
-              alt="men-balancing-on-a-chair"
+              alt="Men balancing on a chair"
             />
             <img
               src={image20}
               className="sliderimg"
-              alt="men-carrying-slam-ball"
+              alt="Men carrying slam ball"
             />
-            <img src={image16} className="sliderimg" alt="men-doing-bridge" />
+            <img src={image16} className="sliderimg" alt="Men doing bridge" />
             <img
               src={image24}
               className="sliderimg img24"
-              alt="men-grabbing-dumbells"
+              alt="Men grabbing dumbells"
             />
-          </AliceCarousel>
+          </AliceCarousel>*/}
         </div>
         <div className="aside">
           <div className="aside-content">
@@ -230,22 +230,22 @@ class LandingPage extends Component {
         <div className="footer">
           <div className="footer-contacts">
             <a href="https://www.linkedin.com/in/clarachaouatb3981363/">
-              <img src={linkedinIcon} alt="linkedin-icon" />
+              <img src={linkedinIcon} alt="linkedin" />
             </a>
             <a href="mailto:clara.chaouat@gmail.com?subject = Feedback&body = Message">
-              <img src={mailIcon} alt="envelope-icon" />
+              <img src={mailIcon} alt="envelope icon" />
             </a>
             <a href="https://github.com/ClaraChaouat">
-              <img src={githubIcon} alt="github-icon" />
+              <img src={githubIcon} alt="github icon" />
             </a>
           </div>
 
           <div className="footer-text">
             Made with
-            <img className="heart-icon" src={heart} alt="heart emoji" />
+            <img className="heart-icon" src={heart} alt="love" />
             somewhere over the rainbow
           </div>
-          <div className="footer-signature">Cléo © 2021</div>
+          <div className="footer signature">Cléo © 2021</div>
         </div>
       </div>
     );
