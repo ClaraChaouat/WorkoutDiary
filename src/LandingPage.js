@@ -119,8 +119,8 @@ class LandingPage extends Component {
             </div>
             <div className="section-text">
               Recording your performances for each of your work out session is the key of progress and consequently of success.
-              WORD helps you to record, track and therefore have an accurate overview of your progress.
-              Enter your number of reps, the weights and all the information which can be useful to track to become a better athlete
+              #WORD helps you to record, track and therefore have an accurate overview of your progress.
+              Enter your number of reps, the weights and all the information useful to track to become a better athlete
             </div>
             <div className="section-buttons">
               <button>Sign in</button>
