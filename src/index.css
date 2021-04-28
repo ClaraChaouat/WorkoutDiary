@@ -39,9 +39,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-/*body {
+body {
 	line-height: 1;
-}*/
+}
 ol, ul {
 	list-style: none;
 }
@@ -70,6 +70,7 @@ body {
 html,
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 
