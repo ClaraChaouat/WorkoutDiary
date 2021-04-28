@@ -110,7 +110,7 @@ class LandingPage extends Component {
           </div>
         </div>
         <div className="section">
-          {/*<AliceCarousel
+          <AliceCarousel
             autoPlay={true}
             autoPlayInterval={4500}
             infinite={true}
@@ -201,7 +201,7 @@ class LandingPage extends Component {
               className="sliderimg img24"
               alt="Men grabbing dumbells"
             />
-          </AliceCarousel>*/}
+          </AliceCarousel>
         </div>
         <div className="aside">
           <div className="aside-content">
