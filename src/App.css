@@ -19,7 +19,6 @@
   grid-template-rows: 50px 460px 65px;
   text-decoration: 1px solid #ffffff;
   min-height: 100%;
-  min-width: 100%;
   background-color: var(--wrapper-background-color);
 }
 
