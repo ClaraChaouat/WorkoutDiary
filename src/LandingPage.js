@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import BurgerMenu from "./BurgerMenu";
 
 import hashtag from "./images/hashtag.svg";
 import AliceCarousel from "react-alice-carousel";
@@ -49,11 +50,25 @@ class LandingPage extends Component {
     return (
       <div className="wrapper">
         <div className="header">
-        <div className="header-logo">
-            #WORD
+          <div className="header-burger-menu">
+            <BurgerMenu></BurgerMenu>
           </div>
+          <div className="header-logo">
+            <div className="header-logo-text">
+              #WORD
+            </div>
+            <div className="header-logo-acronym">
+                <div>Work</div>
+                <div>Out</div>
+                <div>Record</div>
+                <div>Diary©</div>
+            </div>
+          </div>
+          
+      
+          <div className="header-carousel">
           <AliceCarousel
-            autoPlay={true}
+            autoPlay={false}
             autoPlayInterval={7500}
             infinite={true}
             animationType="fadeout"
@@ -99,18 +114,11 @@ class LandingPage extends Component {
               <cite className="author"> &mdash; Franck Ocean</cite>
             </blockquote>
           </AliceCarousel>
+          </div>
         </div>
 
         <div className="nav">
-          <div className="nav-wrapper">
-            <div className="nav-title">#WORD</div>
-            <div className="nav-text">
-              <div>Work</div>
-              <div>Out</div>
-              <div>Record</div>
-              <div>Diary©</div>
-            </div>
-          </div>
+          <div className="nav-wrapper"></div>
         </div>
         <div className="section">
           <div className="section-wrapper">
