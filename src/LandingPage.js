@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
 import BurgerMenu from "./BurgerMenu";
-
 import hashtag from "./images/hashtag.svg";
 import AliceCarousel from "react-alice-carousel";
-// import image1 from "./images/img1.jpeg";
+import Swal from "sweetalert2";
+
+//import image1 from "./images/img1.jpeg";
 // import image2 from "./images/img2.jpeg";
 // import image3 from "./images/img3.jpeg";
 // import image4 from "./images/img4.jpeg";
@@ -24,16 +25,39 @@ import AliceCarousel from "react-alice-carousel";
 // import image20 from "./images/img20.png";
 // import image21 from "./images/img21.jpeg";
 // import image24 from "./images/img24.jpg";
-// import image25 from "./images/img25.png";
-// import image26 from "./images/img26.png";
+//import image25 from "./images/img25.png";
+//import image27 from "./images/img27.png";
+//import image26 from "./images/img26.png";
 import heart from "./images/heart.svg";
 import linkedinIcon from "./images/linkedin.svg";
 import mailIcon from "./images/envelope.svg";
 import githubIcon from "./images/github.svg";
-
 import "react-alice-carousel/lib/alice-carousel.css";
 
 class LandingPage extends Component {
+  opensweetalert() {
+    const { value: email } = Swal.fire({
+      title: "Cant' wait to start to track?",
+      text: "#WORD is under construction and will be ready soon.",
+      input: "email",
+      inputLabel: "Enter your e-mail address to stay in the latest news",
+      inputPlaceholder: "Enter your email address",
+      confirmButtonText: "Notify me",
+      showDenyButton: "true",
+      denyButtonText: "No, thanks",
+      confirmButtonColor: "#b49d9a",
+      denyButtonColor: "black",
+      showCloseButton: true,
+      imageUrl:
+        "https://www.circle-movement.com/media/site/-558800900-1585586027/capture-decran-2020-03-30-a-18.32.37.png",
+      imageAlt: "Man exercising with gym rings",
+    });
+
+    if (email) {
+      Swal.fire(`Entered email: ${email}`);
+    }
+  }
+
   render() {
     const responsive = {
       0: {
@@ -54,86 +78,84 @@ class LandingPage extends Component {
             <BurgerMenu></BurgerMenu>
           </div>
           <div className="header-logo">
-            <div className="header-logo-text">
-              #WORD
-            </div>
+            <div className="header-logo-text">#WORD</div>
             <div className="header-logo-acronym">
-                <div>Work</div>
-                <div>Out</div>
-                <div>Record</div>
-                <div>Diary©</div>
+              <div>Work</div>
+              <div>Out</div>
+              <div>Record</div>
+              <div>Diary©</div>
             </div>
           </div>
-          
-      
-          <div className="header-carousel">
-          <AliceCarousel
-            autoPlay={false}
-            autoPlayInterval={7500}
-            infinite={true}
-            animationType="fadeout"
-            animationDuration={1000}
-            buttonsDisabled={true}
-            responsive={responsive}
-          >
-            <blockquote>
-              <span className="quote5 sidekick">
-                Work hard in silence, let the success be your noise.
-              </span>
-              <cite className="author"> &mdash; Franck Ocean</cite>
-            </blockquote>
-            <blockquote>
-              <span className="quote1 sidekick">
-                A goal without a plan is just a wish.
-              </span>
-              <cite className="author"> &mdash; Antoine De Saint-Exupery</cite>
-            </blockquote>
-            <blockquote>
-              <span className="quote2 sidekick">
-                Master your weakness, grow your strenghts.
-              </span>
-              <cite className="author"> &mdash; Ryan Kahn</cite>
-            </blockquote>
-            <blockquote>
-              <span className="quote3 sidekick">
-                Optimizing physical capacity requires training at unsustainable
-                intensities.
-              </span>
-              <cite className="author"> &mdash; Greg Glassman</cite>
-            </blockquote>
-            <blockquote>
-              <span className="quote4 sidekick">
-                Fitness is a small, small world within the universe of movement.
-              </span>
-              <cite className="author"> &mdash; Ido Portal</cite>
-            </blockquote>
-            <blockquote>
-              <span className="quote5 sidekick">
-                Work hard in silence, let the success be your noise.
-              </span>
-              <cite className="author"> &mdash; Franck Ocean</cite>
-            </blockquote>
-          </AliceCarousel>
-          </div>
-        </div>
 
-        <div className="nav">
-          <div className="nav-wrapper"></div>
+          <div className="header-carousel">
+            <AliceCarousel
+              autoPlay={true}
+              autoPlayInterval={7500}
+              infinite={true}
+              animationType="fadeout"
+              animationDuration={1000}
+              buttonsDisabled={true}
+              responsive={responsive}
+            >
+              <blockquote>
+                <span className="quote5 sidekick">
+                  Work hard in silence, let the success be your noise.
+                </span>
+                <cite className="author"> &mdash; Franck Ocean</cite>
+              </blockquote>
+              <blockquote>
+                <span className="quote1 sidekick">
+                  A goal without a plan is just a wish.
+                </span>
+                <cite className="author">
+                  {" "}
+                  &mdash; Antoine De Saint-Exupery
+                </cite>
+              </blockquote>
+              <blockquote>
+                <span className="quote2 sidekick">
+                  Master your weakness, grow your strenghts.
+                </span>
+                <cite className="author"> &mdash; Ryan Kahn</cite>
+              </blockquote>
+              <blockquote>
+                <span className="quote3 sidekick">
+                  Optimizing physical capacity requires training at
+                  unsustainable intensities.
+                </span>
+                <cite className="author"> &mdash; G.Glassman</cite>
+              </blockquote>
+              <blockquote>
+                <span className="quote4 sidekick">
+                  Fitness is a small, small world within the universe of
+                  movement.
+                </span>
+                <cite className="author"> &mdash; Ido Portal</cite>
+              </blockquote>
+              <blockquote>
+                <span className="quote5 sidekick">
+                  Work hard in silence, let the success be your noise.
+                </span>
+                <cite className="author"> &mdash; Franck Ocean</cite>
+              </blockquote>
+            </AliceCarousel>
+          </div>
         </div>
         <div className="section">
           <div className="section-wrapper">
             <div className="section-title">
-              TRACK YOUR PERFORMANCES <br></br> TO SEE <br></br> THE DIFFERENCES
+              READY TO TRACK <br></br> YOUR PERFORMANCES?
             </div>
             <div className="section-text">
-              Recording your performances for each of your work out session is the key of progress and consequently of success.
-              #WORD helps you to record, track and therefore have an accurate overview of your progress.
-              Enter your number of reps, the weights and all the information useful to track to become a better athlete
+              Recording your performances for each of your work out session is
+              the key of progress and consequently of success. #WORD helps you
+              to record, track and therefore have an accurate overview of your
+              progress. Enter your number of reps, the weights and all the
+              useful information to track to become a better athlete
             </div>
             <div className="section-buttons">
-              <button>Sign in</button>
-              <button>Log in</button>
-
+              <button onClick={this.opensweetalert}>Sign up</button>
+              <button onClick={this.opensweetalert}>Log in</button>
             </div>
           </div>
           {/*<AliceCarousel
@@ -267,11 +289,11 @@ class LandingPage extends Component {
           </div>
 
           <div className="footer-text">
-            Made with
+            Hand-crafted with
             <img className="heart-icon" src={heart} alt="love" />
             somewhere over the rainbow
           </div>
-          <div className="footer signature">Cléo©2021</div>
+          <div className="footer-signature"> by Cléo©</div>
         </div>
       </div>
     );

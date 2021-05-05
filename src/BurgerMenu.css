@@ -7,6 +7,7 @@
   left: 35px;
   top: 25px;
 }
+
 .bm-burger-bars {
   background: var(--burger-menu-button-color);
 }
@@ -18,13 +19,28 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
+  position: absolute;
+  top: 10px !important;
+  right: 10px !important;
   height: 24px;
   width: 24px;
 }
 
+.bm-cross-button::before {
+  content: "#WORD";
+  position: absolute;
+  right: 100px;
+  top: 5px;
+  color: #fff;
+  color: black;
+  -webkit-text-stroke: 1px #fff;
+  font-size: 35px;
+  line-height: normal;
+}
+
 /* Color/shape of close button cross */
 .bm-cross {
-  background: var(--burger-menu-button-color);
+  color: var(--burger-menu-button-color);
 }
 
 /*
@@ -38,10 +54,12 @@
 
 /* General sidebar styles */
 .bm-menu {
+  position: relative;
   background: var(--background-color-header);
   font-size: 1.15em;
   border-radius: 5px;
   padding-top: 46px;
+  overflow-y: hidden !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -53,6 +71,7 @@
 .bm-item-list {
   color: #b8b7ad;
   padding: 0.8em;
+  margin-top: 0.8em;
 }
 
 /* Styling of overlay */

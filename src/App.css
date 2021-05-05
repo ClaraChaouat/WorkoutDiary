@@ -15,16 +15,12 @@
 
 .wrapper {
   display: grid;
-  position:relative;
+  position: relative;
   grid-template-columns: 15% 73% 12%;
   grid-template-rows: 15% 75% 10%;
   text-decoration: 1px solid #ffffff;
   width: 100vw;
   height: 100vh;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   background-color: var(--wrapper-background-color);
 }
 
@@ -39,22 +35,21 @@
 }
 
 .header {
-  position:relative;
+  position: relative;
   background: var(--background-color-header);
   grid-column: 1/4;
   grid-row: 1;
-  display:flex;
+  display: flex;
 }
 
 .header-logo {
-  position:absolute;
-  top:7px;
-  left:100px;
-
+  position: absolute;
+  top: 7px;
+  left: 100px;
 }
 
 .header-logo-text {
-  font:"Gilroy";
+  font: "Gilroy";
   color: black;
   -webkit-text-stroke: 1px #fff;
   font-size: 40px;
@@ -63,17 +58,14 @@
 
 .header-logo-acronym {
   font-weight: 600;
-  display:flex;
-
+  display: flex;
 }
 
-.header-carousel {
-  position: aboslute;
-  right:10px;
+.alice-carousel__wrapper {
+  position: absolute !important;
+  left: -175px;
 }
-
 .nav {
- 
   flex-direction: column;
   background: var(--background-color-header);
   background-color: var(--background-color-header);
@@ -112,51 +104,58 @@
 }
 
 .section {
-  position:relative;
-  background: white;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  background: black;
   grid-row: 2;
-  grid-column: 2;
+  grid-column: 1/3;
   font-family: "Gilroy", sans-serif;
 }
 
 .section-wrapper {
-  position:absolute;
-  right: 0;
-  left: 0;
-  margin: auto;
-
+  position: relative;
+  font-family: "Gilroy", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
-.section-title{
-  font-family: "Gilroy";
+.section-title {
+  display: flex;
+  position: absolute;
+  left: 65px;
+  top: -75px;
+  font-family: "Gilroy ExtraBold";
   font-size: 30px;
-  font-weight:700;
+  font-weight: 700;
+  color: #fff;
 }
 
 .section-text {
-  padding-top:5px;
-  margin: auto;
-  width: 50%;
-  width:800px;
+  padding-top: 5px;
+  font-family: inherit;
+  display: flex;
+  justify-content: flex-start;
+  width: 39%;
+  color: #fff;
 }
 
 .section-buttons button {
-  border-radius: 5px;
   background-color: var(--light-pink-text-color);
-  cursor:pointer;
-  margin-top:10px;
-  font-size:18px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: inherit;
   margin-right: 10px;
   border-radius: 8px;
   cursor: pointer;
-  width:10%;
+  width: 10%;
   border: 1px solid var(--light-pink-text-color);
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .section-buttons button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .aside {
@@ -167,10 +166,9 @@
   grid-row-end: 3;
   flex-basis: auto;
   font-family: "Gilroy", sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   color: var(--light-pink-text-color);
   -webkit-text-stroke: 1px #fff;
- 
 }
 
 .aside-content {
@@ -182,7 +180,7 @@
 .aside-hashtag {
   display: flex;
   justify-content: center;
-  font-size: 108px;
+  font-size: 90px;
   margin-right: 0;
   padding-right: 0;
 }
@@ -192,11 +190,10 @@
 }
 
 .aside-text-effect {
-
   position: relative;
   color: var(--light-pink-text-color);
   -webkit-text-stroke: 1px #fff;
-  font-size: 40px;
+  font-size: 35px;
   line-height: normal;
 }
 
@@ -206,7 +203,7 @@
   top: 0;
   left: 0;
   height: 0;
-  right:0;
+  right: 0;
   color: var(--footer-background-color);
   -webkit-text-stroke: 1px var(--footer-background-color);
   white-space: nowrap;
@@ -224,7 +221,6 @@
   position: relative;
   color: var(--light-pink-text-color);
   -webkit-text-stroke: 2px #fff;
-  
 }
 
 .aside-span-effect:before {
@@ -252,10 +248,7 @@
   color: var(--background-color);
   align-items: center;
   justify-content: center;
-}
-
-.alice-carousel {
-  border-radius: 25px;
+  background-color: #262626;
 }
 
 .sliderimg {
@@ -290,11 +283,12 @@ div.alice-carousel__next-btn {
 }
 
 .footer-text {
-  margin-top: -3px;
+  margin-top: 3px;
+  font-size: 10px !important;
 }
 
 .footer-contacts {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .footer-contacts img {
@@ -302,8 +296,8 @@ div.alice-carousel__next-btn {
 }
 
 .footer-signature {
-  margin-bottom: 7px;
-  font-size: 10px;
+  margin: 5px;
+  font-size: 10px !important;
   font-family: "Lucida Handwriting";
 }
 
@@ -318,29 +312,30 @@ div.alice-carousel__next-btn {
 
 blockquote {
   text-align: end;
+  font-family: "Gilroy", sans-serif;
 }
 
 .quote1 {
-  font-family: "Roboto", serif;
+  font-family: inherit;
   font-size: 20px;
   width: 380px;
 }
 
 .quote2 {
-  font-family: "Roboto", serif;
+  font-family: inherit;
   font-size: 20px;
   width: 420px;
 }
 
 .quote3 {
-  font-family: "Roboto", serif;
+  font-family: inherit;
   font-size: 20px;
   width: 660px;
 }
 
 .quote4,
 .quote5 {
-  font-family: "Roboto", serif;
+  font-family: inherit;
   font-size: 20px;
   width: 580px;
 }
@@ -350,13 +345,11 @@ blockquote {
 }
 
 .author {
-  font-family: "Roboto", serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 18px;
   border-right: 4px solid var(--light-pink-text-color);
   padding-right: 10px;
 }
-
-
 
 .sidekick:before,
 .sidekick:after {
@@ -379,5 +372,4 @@ blockquote {
   width: 800px !important;
   display: flex;
   justify-content: flex-start;
-
 }
