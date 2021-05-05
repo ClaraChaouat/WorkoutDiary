@@ -194,7 +194,9 @@
   color: var(--light-pink-text-color);
   -webkit-text-stroke: 1px #fff;
   font-size: 35px;
+  font-family: "Gilroy", sans-serif;
   line-height: normal;
+ 
 }
 
 .aside-text-effect:before {
@@ -202,19 +204,38 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 0;
+  height: 100%;
   right: 0;
   color: var(--footer-background-color);
   -webkit-text-stroke: 1px var(--footer-background-color);
   white-space: nowrap;
   transition: 0.8s;
   overflow: hidden;
+  font-family: "Gilroy", sans-serif;
+  clip-path: polygon(0 0, 0 0%, 100% 0%, 100% 0);
   line-height: normal;
 }
 
 .aside-text-effect:hover:before {
   height: 100%;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+  font-family: "Gilroy", sans-serif;
   line-height: normal;
+}
+
+
+@-moz-document url-prefix()  { 
+  .aside-text-effect {
+   line-height: 1;
+  }
+
+  .aside-text-effect:before {
+    line-height: 1;
+   }
+
+  .aside-text-effect:hover:before {
+    line-height: 1;
+   }
 }
 
 .aside-span-effect {
@@ -228,15 +249,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 0;
+  height: 100%;
   color: #fff;
   white-space: nowrap;
   transition: 0.8s;
   overflow: hidden;
+  clip-path: polygon(0 0, 0 1%, 100% 1%, 100% 0);
 }
 
 .aside-span-effect:hover:before {
   height: 100%;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
 }
 
 .footer {
