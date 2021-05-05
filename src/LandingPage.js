@@ -33,6 +33,7 @@ import linkedinIcon from "./images/linkedin.svg";
 import mailIcon from "./images/envelope.svg";
 import githubIcon from "./images/github.svg";
 import "react-alice-carousel/lib/alice-carousel.css";
+import swal from "sweetalert";
 
 class LandingPage extends Component {
   opensweetalert() {
@@ -43,6 +44,7 @@ class LandingPage extends Component {
       inputLabel: "Enter your e-mail address to stay in the latest news",
       inputPlaceholder: "Enter your email address",
       confirmButtonText: "Notify me",
+      validationMessage: "Thanks for subscribing! We'll get to you soon",
       showDenyButton: "true",
       denyButtonText: "No, thanks",
       confirmButtonColor: "#b49d9a",
@@ -51,11 +53,15 @@ class LandingPage extends Component {
       imageUrl:
         "https://www.circle-movement.com/media/site/-558800900-1585586027/capture-decran-2020-03-30-a-18.32.37.png",
       imageAlt: "Man exercising with gym rings",
+    })
+    .then((email) => {
+      if (email.isConfirmed) {
+        Swal.fire(`Your e-mail address has been saved!`);
+        console.log(email);
+      } else if (email.isDenied) {
+        Swal.fire("Hope to see you soon!");
+      }
     });
-
-    if (email) {
-      Swal.fire(`Entered email: ${email}`);
-    }
   }
 
   render() {
