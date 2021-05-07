@@ -5,29 +5,29 @@ import hashtag from "./images/hashtag.svg";
 import AliceCarousel from "react-alice-carousel";
 import Swal from "sweetalert2";
 
-//import image1 from "./images/img1.jpeg";
-// import image2 from "./images/img2.jpeg";
-// import image3 from "./images/img3.jpeg";
-// import image4 from "./images/img4.jpeg";
-// import image4bis from "./images/img4bis.jpg";
-// import image5 from "./images/img5.jpeg";
-// import image7 from "./images/img7.jpeg";
-// import image8 from "./images/img8.jpeg";
-// import image9 from "./images/img9.jpeg";
-// import image10 from "./images/img10.jpeg";
-// import image12 from "./images/img12.jpeg";
-// import image13 from "./images/img13.jpeg";
-// import image14 from "./images/img14.jpeg";
-// import image15 from "./images/img15.jpeg";
-// import image16 from "./images/img16.jpeg";
-// import image17 from "./images/img17.png";
-// import image18 from "./images/img18.jpeg";
-// import image20 from "./images/img20.png";
-// import image21 from "./images/img21.jpeg";
-// import image24 from "./images/img24.jpg";
-//import image25 from "./images/img25.png";
-//import image27 from "./images/img27.png";
-//import image26 from "./images/img26.png";
+import image1 from "./images/img1.jpeg";
+import image2 from "./images/img2.jpeg";
+import image3 from "./images/img3.jpeg";
+import image4 from "./images/img4.jpeg";
+import image4bis from "./images/img4bis.jpg";
+import image5 from "./images/img5.jpeg";
+import image7 from "./images/img7.jpeg";
+import image8 from "./images/img8.jpeg";
+import image9 from "./images/img9.jpeg";
+import image10 from "./images/img10.jpeg";
+import image12 from "./images/img12.jpeg";
+import image13 from "./images/img13.jpeg";
+import image14 from "./images/img14.jpeg";
+import image15 from "./images/img15.jpeg";
+import image16 from "./images/img16.jpeg";
+import image17 from "./images/img17.png";
+import image18 from "./images/img18.jpeg";
+import image20 from "./images/img20.png";
+import image21 from "./images/img21.jpeg";
+import image24 from "./images/img24.jpg";
+import image25 from "./images/img25.png";
+import image27 from "./images/img27.png";
+import image26 from "./images/img26.png";
 import heart from "./images/heart.svg";
 import linkedinIcon from "./images/linkedin.svg";
 import mailIcon from "./images/envelope.svg";
@@ -43,7 +43,7 @@ class LandingPage extends Component {
       input: "email",
       inputLabel: "Enter your e-mail address to stay in the latest news",
       inputPlaceholder: "Enter your email address",
-      confirmButtonText: "Notify me",
+      confirmButtonText: "Notify me!",
       validationMessage: "Thanks for subscribing! We'll get to you soon",
       showDenyButton: "true",
       denyButtonText: "No, thanks",
@@ -164,12 +164,13 @@ class LandingPage extends Component {
               <button onClick={this.opensweetalert}>Log in</button>
             </div>
           </div>
-          {/*<AliceCarousel
-            autoPlay={false}
+          <div className="section-carousel">
+              <AliceCarousel
+            autoPlay={true}
             autoPlayInterval={4500}
             infinite={true}
             animationType="fadeout"
-            animationDuration={100}
+            animationDuration={5000}
             buttonsDisabled={true}
             responsive={responsive}
           >
@@ -255,7 +256,9 @@ class LandingPage extends Component {
               className="sliderimg img24"
               alt="Men grabbing dumbells"
             />
-          </AliceCarousel>*/}
+          </AliceCarousel>
+          </div>
+        
         </div>
         <div className="aside">
           <div className="aside-content">
