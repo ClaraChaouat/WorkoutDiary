@@ -26,18 +26,18 @@ import image20 from "./images/img20.png";
 import image21 from "./images/img21.jpeg";
 import image24 from "./images/img24.jpg";
 import image25 from "./images/img25.png";
-import image27 from "./images/img27.png";
+//import image27 from "./images/img27.png";
 import image26 from "./images/img26.png";
 import heart from "./images/heart.svg";
 import linkedinIcon from "./images/linkedin.svg";
 import mailIcon from "./images/envelope.svg";
 import githubIcon from "./images/github.svg";
 import "react-alice-carousel/lib/alice-carousel.css";
-import swal from "sweetalert";
+//import swal from "sweetalert";
 
 class LandingPage extends Component {
   opensweetalert() {
-    const { value: email } = Swal.fire({
+    Swal.fire({
       title: "Cant' wait to start to track?",
       text: "#WORD is under construction and will be ready soon.",
       input: "email",
