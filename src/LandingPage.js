@@ -6,7 +6,6 @@ import AliceCarousel from "react-alice-carousel";
 import Swal from "sweetalert2";
 
 import image1 from "./images/img1.jpeg";
-import image2 from "./images/img2.jpeg";
 import image3 from "./images/img3.jpeg";
 import image4 from "./images/img4.jpeg";
 import image4bis from "./images/img4bis.jpg";
@@ -20,9 +19,7 @@ import image13 from "./images/img13.jpeg";
 import image14 from "./images/img14.jpeg";
 import image15 from "./images/img15.jpeg";
 import image16 from "./images/img16.jpeg";
-import image17 from "./images/img17.png";
 import image18 from "./images/img18.jpeg";
-import image20 from "./images/img20.png";
 import image21 from "./images/img21.jpeg";
 import image24 from "./images/img24.jpg";
 import image25 from "./images/img25.png";
@@ -53,8 +50,7 @@ class LandingPage extends Component {
       imageUrl:
         "https://www.circle-movement.com/media/site/-558800900-1585586027/capture-decran-2020-03-30-a-18.32.37.png",
       imageAlt: "Man exercising with gym rings",
-    })
-    .then((email) => {
+    }).then((email) => {
       if (email.isConfirmed) {
         Swal.fire(`Your e-mail address has been saved!`);
         console.log(email);
@@ -150,10 +146,10 @@ class LandingPage extends Component {
         <div className="section">
           <div className="section-wrapper">
             <div className="section-title">
-              READY TO TRACK <br></br> YOUR PERFORMANCES?
+              READY TO TRACK <br></br> YOUR <br></br> PERFORMANCES?
             </div>
             <div className="section-text">
-              Recording your performances for each of your work out session is
+              Recording your performances for each of your work out sessions is
               the key of progress and consequently of success. #WORD helps you
               to record, track and therefore have an accurate overview of your
               progress. Enter your number of reps, the weights and all the
@@ -165,100 +161,100 @@ class LandingPage extends Component {
             </div>
           </div>
           <div className="section-carousel">
-              <AliceCarousel
-            autoPlay={true}
-            autoPlayInterval={4500}
-            infinite={true}
-            animationType="fadeout"
-            animationDuration={5000}
-            buttonsDisabled={true}
-            responsive={responsive}
-          >
-            <img
-              src={image1}
-              className="sliderimg"
-              alt="Handstand-hold-position-man"
-            />
-            <img src={image2} className="sliderimg" alt="Man weightlifting" />
-            <img src={image3} className="sliderimg" alt="Men junggling" />
-            <img src={image4} className="sliderimg" alt="Men doing sissy squat" />
-            <img
-              src={image4bis}
-              className="sliderimg"
-              alt="Men doing gym movement"
-            />
-            <img
-              src={image5}
-              className="sliderimg"
-              alt="Man standing on hands"
-            />
-            <img
-              src={image25}
-              className="sliderimg"
-              alt="Men doing bridge movement"
-            />
-            <img src={image7} className="sliderimg" alt="Men doing handstand" />
-            <img
-              src={image8}
-              className="sliderimg"
-              alt="Men doing handstand on stairs"
-            />
-            <img
-              src={image21}
-              className="sliderimg"
-              alt="Men doing gym movement"
-            />
-            <img
-              src={image9}
-              className="sliderimg"
-              alt="Men doing lsit movement"
-            />
-            <img
-              src={image10}
-              className="sliderimg"
-              alt="Men doing sissi squat"
-            />
-            <img src={image13} className="sliderimg" alt="Men doing back flip-" />
-            <img
-              src={image26}
-              className="sliderimg img26"
-              alt="Men doing weighlifting"
-            />
-            <img src={image18} className="sliderimg" alt="Men doing bridge" />
-            <img
-              src={image14}
-              className="sliderimg"
-              alt="Men doing handstand with bended legs "
-            />
-            <img
-              src={image15}
-              className="sliderimg"
-              alt="Men doing handstand with open legs"
-            />
-            <img
-              src={image12}
-              className="sliderimg"
-              alt="Man doing sissi squat"
-            />
-            <img
-              src={image17}
-              className="sliderimg"
-              alt="Men balancing on a chair"
-            />
-            <img
-              src={image20}
-              className="sliderimg"
-              alt="Men carrying slam ball"
-            />
-            <img src={image16} className="sliderimg" alt="Men doing bridge" />
-            <img
-              src={image24}
-              className="sliderimg img24"
-              alt="Men grabbing dumbells"
-            />
-          </AliceCarousel>
+            <AliceCarousel
+              autoPlay={false}
+              autoPlayInterval={4500}
+              infinite={true}
+              animationType="fadeout"
+              animationDuration={5000}
+              buttonsDisabled={true}
+              responsive={responsive}
+            >
+              <img
+                src={image1}
+                className="sliderimg"
+                alt="Handstand-hold-position-man"
+              />
+              <img src={image3} className="sliderimg" alt="Men junggling" />
+              <img
+                src={image4}
+                className="sliderimg"
+                alt="Men doing sissy squat"
+              />
+              <img
+                src={image4bis}
+                className="sliderimg"
+                alt="Men doing gym movement"
+              />
+              <img
+                src={image5}
+                className="sliderimg"
+                alt="Man standing on hands"
+              />
+              <img
+                src={image25}
+                className="sliderimg"
+                alt="Men doing bridge movement"
+              />
+              <img
+                src={image7}
+                className="sliderimg"
+                alt="Men doing handstand"
+              />
+              <img
+                src={image8}
+                className="sliderimg"
+                alt="Men doing handstand on stairs"
+              />
+              <img
+                src={image21}
+                className="sliderimg"
+                alt="Men doing gym movement"
+              />
+              <img
+                src={image9}
+                className="sliderimg"
+                alt="Men doing lsit movement"
+              />
+              <img
+                src={image10}
+                className="sliderimg"
+                alt="Men doing sissi squat"
+              />
+              <img
+                src={image13}
+                className="sliderimg"
+                alt="Men doing back flip-"
+              />
+              <img
+                src={image26}
+                className="sliderimg img26"
+                alt="Men doing weighlifting"
+              />
+              <img src={image18} className="sliderimg" alt="Men doing bridge" />
+              <img
+                src={image14}
+                className="sliderimg"
+                alt="Men doing handstand with bended legs "
+              />
+              <img
+                src={image15}
+                className="sliderimg"
+                alt="Men doing handstand with open legs"
+              />
+              <img
+                src={image12}
+                className="sliderimg"
+                alt="Man doing sissi squat"
+              />
+              <img src={image16} className="sliderimg" alt="Men doing bridge" />
+              <img
+                src={image24}
+                className="sliderimg img24"
+                alt="Men grabbing dumbells"
+              />
+            </AliceCarousel>
           </div>
-        
         </div>
         <div className="aside">
           <div className="aside-content">

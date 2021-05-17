@@ -1,11 +1,9 @@
 /* Color/shape of burger icon bars */
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: absolute;
+  position: relative;
   width: 36px;
   height: 30px;
-  /* left: 35px;
-  top: 25px; */
 }
 
 .bm-burger-bars {
@@ -49,7 +47,8 @@
   */
 .bm-menu-wrap {
   position: fixed;
-  height: 89% !important;
+  top: 0;
+  transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0s !important;
 }
 
 /* General sidebar styles */

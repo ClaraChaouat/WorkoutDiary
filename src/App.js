@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import "./LandingPage.js";
 import LandingPage from "./LandingPage.js";
 
-
 class App extends Component {
   render() {
     return (
