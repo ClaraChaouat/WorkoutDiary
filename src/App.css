@@ -13,6 +13,8 @@
   color: white;
 }
 
+/*------------------------------Wrapper---------------------------------*/
+
 .wrapper {
   display: grid;
   position: relative;
@@ -34,6 +36,8 @@
   justify-content: center;
 }
 
+/*------------------------------Header---------------------------------*/
+
 .header {
   position: relative;
   background: var(--background-color-header);
@@ -43,11 +47,12 @@
   justify-content: space-between;
   align-items: center;
   padding-right: 1.2em;
+  color: white;
 }
 
 .header-logo {
-  position: relative;
-  margin-left: -12.2em;
+  position: absolute;
+  left: 4.2em;
 }
 
 .header-logo-text {
@@ -67,10 +72,8 @@
   margin-left: 1.3em;
 }
 
-/* .alice-carousel__wrapper {
-  position: absolute !important;
-  left: -175px;
-} */
+/*------------------------------Nav---------------------------------*/
+
 .nav {
   flex-direction: column;
   background: var(--background-color-header);
@@ -109,6 +112,8 @@
   font-size: 140%;
 }
 
+/*------------------------------Section---------------------------------*/
+
 .section {
   position: relative;
   background: black;
@@ -145,13 +150,11 @@
   align-items: center;
   width: 70%;
   color: #fff;
+  line-height: 1.2;
 }
 
 .section-buttons {
   display: flex;
-  /* position:absolute; */
-  /* left:80px;
-  top:190px; */
   width: 40%;
 }
 
@@ -172,6 +175,8 @@
   border: 1px solid var(--wrapper-background-color);
   color: #fff;
 }
+
+/*------------------------------Aside---------------------------------*/
 
 .aside {
   background: var(--light-pink-text-color);
@@ -203,6 +208,8 @@
 .aside-hashtag {
   margin-bottom: 8px;
 }
+
+/*------------------------------Aside animations---------------------------------*/
 
 .aside-text-effect {
   position: relative;
@@ -275,6 +282,8 @@
   clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
 }
 
+/*------------------------------Footer---------------------------------*/
+
 .footer {
   background: var(--footer-background-color);
   grid-row: 3;
@@ -285,37 +294,6 @@
   align-items: center;
   justify-content: center;
   background-color: #262626;
-}
-
-.img24 {
-  filter: grayscale(80%);
-  opacity: 0.8;
-}
-
-.img26 {
-  filter: grayscale(80%);
-  opacity: 0.8;
-}
-
-.alice-carousel__dots {
-  display: none;
-}
-
-p.alice-carousel__prev-btn-item,
-p.alice-carousel__next-btn-item {
-  display: none;
-}
-
-div.alice-carousel__prev-btn,
-div.alice-carousel__next-btn {
-  display: none;
-}
-
-.alice-carousel ul li img {
-  display: flex;
-  height: 350px;
-  width: 50%;
-  object-fit: cover;
 }
 
 .footer-text {
@@ -337,8 +315,27 @@ div.alice-carousel__next-btn {
   font-family: "Lucida Handwriting";
 }
 
-.header {
-  color: white;
+/*------------------------------Carousel of quotes---------------------------------*/
+
+.alice-carousel__dots {
+  display: none;
+}
+
+p.alice-carousel__prev-btn-item,
+p.alice-carousel__next-btn-item {
+  display: none;
+}
+
+div.alice-carousel__prev-btn,
+div.alice-carousel__next-btn {
+  display: none;
+}
+
+.alice-carousel ul li img {
+  display: flex;
+  height: 350px;
+  width: 50%;
+  object-fit: cover;
 }
 
 .slidertext {
@@ -404,34 +401,104 @@ blockquote {
   margin-left: 3px;
 }
 
+/*------------------------------Carousel of images (in the section)---------------------------------*/
+
 .alice-carousel__wrapper {
   width: 800px !important;
-}
-
-.section-carousel {
-  height: 100%;
 }
 
 .section-carousel .alice-carousel__wrapper {
   display: flex;
   align-content: center;
   width: 100%;
-  height: 100%;
   width: 400px !important;
   margin-right: 0.5em;
 }
 
 .section-carousel .alice-carousel ul li img {
-  height: 100%;
   width: 100%;
-
-  /* height:490px; */
+  
 }
+
+
 
 .sliderimg {
   object-fit: cover;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  border: 2px solid #000;
-  box-shadow: 2px 2px 8px 12px rgba(0, 0, 0, 0.8);
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+  border-radius: 4px; 
+  opacity: 0.4;
+ 
+ 
 }
+
+.section-carousel .alice-carousel__stage-item {
+  position:relative;
+}
+
+.section-carousel .alice-carousel__stage-item::after {
+  content:'';
+  position:absolute;
+  display:block;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  box-shadow: inset 0 0 9px 11px rgba(0,0,0,0.8);
+  
+
+}
+
+
+
+/*------------------------------Modal---------------------------------*/
+
+.swal2-input-label {
+  margin: 0 auto !important;
+  font-size: 1em !important;
+}
+
+.swal2-input {
+  margin: 0.6em auto !important;
+  height: 1.8em !important;
+}
+
+.swal2-content {
+  font-size: 1em !important;
+}
+
+.swal2-image {
+  margin-bottom: 0 !important;
+}
+
+.swal2-title {
+  margin: 0.2em auto !important;
+  font-size: 1.2em !important;
+}
+
+.swal2-actions {
+  margin-top: 0.2em !important;
+}
+
+/*------------------------------Images (added specific styles to specific images)---------------------------------*/
+
+.img12.img16 {
+  opacity: 0.2;
+  filter: grayscale(60%);
+}
+
+.img20.img1{
+  opacity: 0.2;
+  filter: grayscale(60%);
+}
+
+.img1{
+  opacity: 0.3;
+  filter: grayscale(60%);
+}
+
+.img4bis{
+  opacity: 0.2;
+  filter: grayscale(60%);
+}
+
