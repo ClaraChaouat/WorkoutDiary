@@ -10,11 +10,6 @@
   background: var(--burger-menu-button-color);
 }
 
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-  background: var(--background-color);
-}
-
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
   position: absolute;
@@ -48,7 +43,7 @@
 .bm-menu-wrap {
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0s !important;
 }
 
@@ -100,7 +95,9 @@
   border-bottom: 1px solid var(--burger-menu-button-color);
 }
 
-.bm-item:hover {
-  background: var(--background-color-header);
-  filter: brightness(50%);
+@media (hover: hover) and (pointer: fine) {
+  .bm-item:hover {
+    background: var(--background-color-header);
+    filter: brightness(50%);
+  }
 }
