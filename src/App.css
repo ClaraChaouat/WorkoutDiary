@@ -170,10 +170,12 @@
   border: 1px solid var(--light-pink-text-color);
 }
 
-.section-buttons button:hover {
-  background-color: var(--wrapper-background-color);
-  border: 1px solid var(--wrapper-background-color);
-  color: #fff;
+@media (hover: hover) and (pointer: fine) {
+  .section-buttons button:hover {
+    background-color: var(--wrapper-background-color);
+    border: 1px solid var(--wrapper-background-color);
+    color: #fff;
+  }
 }
 
 /*------------------------------Aside---------------------------------*/
@@ -417,39 +419,30 @@ blockquote {
 
 .section-carousel .alice-carousel ul li img {
   width: 100%;
-  
 }
-
-
 
 .sliderimg {
   object-fit: cover;
-  -webkit-filter: grayscale(80%);
-  filter: grayscale(80%);
-  border-radius: 4px; 
-  opacity: 0.4;
- 
- 
+  -webkit-filter: grayscale(60%);
+  filter: grayscale(60%);
+  border-radius: 4px;
+  opacity: 0.6;
 }
 
 .section-carousel .alice-carousel__stage-item {
-  position:relative;
+  position: relative;
 }
 
 .section-carousel .alice-carousel__stage-item::after {
-  content:'';
-  position:absolute;
-  display:block;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  box-shadow: inset 0 0 9px 11px rgba(0,0,0,0.8);
-  
-
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 9px 11px rgba(0, 0, 0, 0.8);
 }
-
-
 
 /*------------------------------Modal---------------------------------*/
 
@@ -487,18 +480,44 @@ blockquote {
   filter: grayscale(60%);
 }
 
-.img20.img1{
+.img20.img1 {
   opacity: 0.2;
   filter: grayscale(60%);
 }
 
-.img1{
-  opacity: 0.3;
+.img1 {
+  opacity: 0.4;
   filter: grayscale(60%);
 }
 
-.img4bis{
-  opacity: 0.2;
+.img21 {
+  opacity: 0.5;
   filter: grayscale(60%);
 }
 
+/* Desktop-first*/
+
+
+/* Default: Desktop monitors, 1501px and up */
+/* @media (max-width: 93.75rem) { */
+  /* Laptop */
+/* } */
+/* @media (max-width: calc(1100 / 16 * 1rem)){ */
+  /* Tablets */
+/* } */
+/* @media (max-width:calc(550 / 16 * 1rem)) { */
+  /* Phones */
+/* } */
+
+@media (max-width: calc(320 / 16 * 1rem)) {
+  /* Iphone SE*/
+  .section-carousel .alice-carousel ul li img {
+    display: none;
+  }
+  .aside{
+    display:none;
+  }
+  .alice-carousel{
+    display:none;
+  }
+} 
