@@ -1,1 +1,1 @@
-# WorkoutDiary
+# WorkoutRecordDiary (#WORD)
