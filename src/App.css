@@ -59,7 +59,7 @@
   font: "Gilroy";
   color: black;
   -webkit-text-stroke: 1px #fff;
-  font-size: 40px;
+  font-size: calc(40 / 16 * 1rem);
   line-height: normal;
 }
 
@@ -99,7 +99,7 @@
 
 .nav-title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: calc(40 / 16 * 1rem);
 }
 
 .nav-text {
@@ -137,7 +137,7 @@
 .section-title {
   display: flex;
   font-family: "Gilroy ExtraBold";
-  font-size: 30px;
+  font-size: calc(30 / 16 * 1rem);
   font-weight: 700;
   color: #fff;
   align-items: center;
@@ -153,6 +153,10 @@
   line-height: 1.2;
 }
 
+.section-text-mobile-version {
+  display: none;
+}
+
 .section-buttons {
   display: flex;
   width: 40%;
@@ -161,7 +165,7 @@
 .section-buttons button {
   background-color: var(--light-pink-text-color);
   margin-top: 30px;
-  font-size: 18px;
+  font-size: calc(18 / 16 * 1rem);
   font-family: inherit;
   margin-right: 10px;
   border-radius: 8px;
@@ -188,7 +192,7 @@
   grid-row-end: 3;
   flex-basis: auto;
   font-family: "Gilroy", sans-serif;
-  font-size: 35px;
+  font-size: calc(35 / 16 * 1rem);
   color: var(--light-pink-text-color);
   -webkit-text-stroke: 1px #fff;
 }
@@ -202,7 +206,7 @@
 .aside-hashtag {
   display: flex;
   justify-content: center;
-  font-size: 90px;
+  font-size: calc(90 / 16 * 1rem);
   margin-right: 0;
   padding-right: 0;
 }
@@ -217,7 +221,7 @@
   position: relative;
   color: var(--light-pink-text-color);
   -webkit-text-stroke: 1px #fff;
-  font-size: 35px;
+  font-size: calc(35 / 16 * 1rem);
   font-family: "Gilroy", sans-serif;
   line-height: normal;
 }
@@ -300,7 +304,7 @@
 
 .footer-text {
   margin-top: 3px;
-  font-size: 10px !important;
+  font-size: calc(10 / 16 * 1rem) !important;
 }
 
 .footer-contacts {
@@ -313,7 +317,7 @@
 
 .footer-signature {
   margin: 5px;
-  font-size: 10px !important;
+  font-size: calc(10 / 16 * 1rem) !important;
   font-family: "Lucida Handwriting";
 }
 
@@ -352,26 +356,26 @@ blockquote {
 
 .quote1 {
   font-family: inherit;
-  font-size: 20px;
+  font-size: calc(20 / 16 * 1rem);
   width: 380px;
 }
 
 .quote2 {
   font-family: inherit;
-  font-size: 20px;
+  font-size: calc(20 / 16 * 1rem);
   width: 420px;
 }
 
 .quote3 {
   font-family: inherit;
-  font-size: 20px;
+  font-size: calc(20 / 16 * 1rem);
   width: 660px;
 }
 
 .quote4,
 .quote5 {
   font-family: inherit;
-  font-size: 20px;
+  font-size: calc(20 / 16 * 1rem);
   width: 580px;
 }
 
@@ -381,7 +385,7 @@ blockquote {
 
 .author {
   font-family: "Gilroy", sans-serif;
-  font-size: 18px;
+  font-size: calc(18 / 16 * 1rem);
   border-right: 4px solid var(--light-pink-text-color);
   padding-right: 10px;
 }
@@ -390,7 +394,7 @@ blockquote {
 .sidekick:after {
   font-family: Calibri;
   color: var(--light-pink-text-color);
-  font-size: 22px;
+  font-size: calc(22 / 16 * 1rem);
   margin-right: 5px;
 }
 .sidekick:before {
@@ -423,8 +427,8 @@ blockquote {
 
 .sliderimg {
   object-fit: cover;
-  -webkit-filter: grayscale(60%);
-  filter: grayscale(60%);
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
   border-radius: 4px;
   opacity: 0.6;
 }
@@ -477,47 +481,228 @@ blockquote {
 
 .img12.img16 {
   opacity: 0.2;
-  filter: grayscale(60%);
+  filter: grayscale(90%);
 }
 
 .img20.img1 {
   opacity: 0.2;
-  filter: grayscale(60%);
+  filter: grayscale(90%);
 }
 
 .img1 {
   opacity: 0.4;
-  filter: grayscale(60%);
+  filter: grayscale(90%);
 }
 
 .img21 {
   opacity: 0.5;
-  filter: grayscale(60%);
+  filter: grayscale(90%);
 }
+
+/*-----------------Responsive section-----------*/
 
 /* Desktop-first*/
 
-
-/* Default: Desktop monitors, 1501px and up */
-/* @media (max-width: 93.75rem) { */
-  /* Laptop */
-/* } */
-/* @media (max-width: calc(1100 / 16 * 1rem)){ */
+@media (max-width: calc(950 / 16 * 1rem)){ 
   /* Tablets */
-/* } */
-/* @media (max-width:calc(550 / 16 * 1rem)) { */
-  /* Phones */
-/* } */
-
-@media (max-width: calc(320 / 16 * 1rem)) {
-  /* Iphone SE*/
-  .section-carousel .alice-carousel ul li img {
+  
+  
+  .aside {
     display: none;
   }
-  .aside{
-    display:none;
+
+  .wrapper {
+    grid-template-columns: 20% 80%;
   }
-  .alice-carousel{
-    display:none;
+
+  .section-buttons {
+    width:70%;
   }
-} 
+  
+  /* .section-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 95%;
+    height: 80%;
+  } */
+  
+  
+  } 
+
+
+ @media (max-width:calc(600 / 16 * 1rem)) {
+/* Phones */
+.aside {
+  display: none;
+}
+.wrapper {
+  grid-template-columns: 20% 80%;
+}
+
+.header-logo {
+  position: absolute;
+}
+
+.header-carousel {
+  display: none;
+}
+
+.section-wrapper {
+  position:relative;
+  display:flex;
+  margin-left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 426px;
+  z-index: 100;
+}
+
+.section-title {
+  font-size: calc(25 / 16 * 1rem);
+}
+
+.section-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 90%;
+  height: 90%;
+}
+
+.section-carousel .alice-carousel ul li img {
+  position: relative;
+}
+
+.section-carousel .alice-carousel__wrapper {
+  width: 350px !important;
+}
+
+.section-text-mobile-version {
+  padding-top: 8px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.section-text {
+  display: none;
+}
+
+.section-buttons {
+  width: 65%;
+  position: absolute;
+  transform: translateY(300%);
+
+ 
+}
+
+.section-carousel .alice-carousel__stage-item {
+  position: relative;
+}
+
+.section-carousel .alice-carousel__stage-item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 9px 11px rgba(0, 0, 0, 0.8);
+}
+
+ } 
+
+ @media (max-width: calc(320 / 16 * 1rem)) {
+  /* Iphone SE*/
+
+  .wrapper {
+    grid-template-columns: 20% 80%;
+  }
+
+  .header-logo {
+    position: absolute;
+  }
+
+  .header-carousel {
+    display: none;
+  }
+
+  .section-wrapper {
+    margin-left: 0;
+    height: 426px;
+    z-index: 100;
+  }
+
+  .section-title {
+    font-size: calc(25 / 16 * 1rem);
+  }
+
+  .section-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 95%;
+    height: 80%;
+  }
+  .section-carousel .alice-carousel ul li img {
+    position: relative;
+  }
+
+  .section-carousel .alice-carousel__wrapper {
+    width: 300px !important;
+  }
+
+  .section-text-mobile-version {
+    padding-top: 8px;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: #fff;
+    line-height: 1.2;
+  }
+
+  .section-text {
+    display: none;
+  }
+
+  .section-buttons {
+    width: 65%;
+  }
+
+  .aside {
+    display: none;
+  }
+}
+
+@media (max-width: calc(320 / 16 * 1rem)) {
+
+  .section-carousel .alice-carousel__wrapper {
+    width: 270px !important;
+  }
+
+}
+
+
+
+
+
+
+/* Laptop */
+/* @media (max-width: calc(1300 / 16 * 1rem)) { */
+
+/* } */

@@ -146,6 +146,10 @@ class LandingPage extends Component {
               progress. Enter your number of reps, the weights and all the
               useful information to track to become a better athlete
             </div>
+            <div className="section-text-mobile-version">
+              #WORD helps you to record and track your performances to become a better athlete. Enter your work out records and get a fast and accurate overview of your
+              progress.  
+            </div>
             <div className="section-buttons">
               <button onClick={this.opensweetalert}>Sign up</button>
               <button onClick={this.opensweetalert}>Log in</button>

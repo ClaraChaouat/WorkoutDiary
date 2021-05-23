@@ -27,7 +27,7 @@
   color: #fff;
   color: black;
   -webkit-text-stroke: 1px #fff;
-  font-size: 35px;
+  font-size: calc(35 / 16 * 1rem);
   line-height: normal;
 }
 
