@@ -6,7 +6,7 @@
 
 https://workoutrecorddiary.netlify.app/
 
-To have a look a the code: check the working-branch:
+To have a look a the code: check out the working-branch:
 
 https://github.com/ClaraChaouat/WorkoutRecordDiary/blob/working-branch/README.md
 
