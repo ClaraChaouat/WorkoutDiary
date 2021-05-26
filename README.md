@@ -10,4 +10,7 @@ To have a look a the code: check out the working-branch:
 
 https://github.com/ClaraChaouat/WorkoutRecordDiary/blob/working-branch/README.md
 
+## Psssssst :shushing_face:
+There are some hidden css animations. Hover the whole page to find them :blush:
+
 
