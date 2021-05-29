@@ -1,4 +1,7 @@
 # WorkOutRecordDiary (#WORD)
+<p align="center">
+  <img width="800" src="src/fonts/images/AnimationC.gif"/>
+</p>
 
 ## Notes:loudspeaker:
 
