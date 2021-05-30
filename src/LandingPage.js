@@ -4,7 +4,6 @@ import BurgerMenu from "./BurgerMenu";
 import hashtag from "./images/hashtag.svg";
 import AliceCarousel from "react-alice-carousel";
 import Swal from "sweetalert2";
-
 import image1 from "./images/img1.jpeg";
 import image7 from "./images/img7.jpeg";
 import image9 from "./images/img9.jpeg";
@@ -90,7 +89,7 @@ class LandingPage extends Component {
               buttonsDisabled={true}
               responsive={responsive}
             >
-              <blockquote>
+              <blockquote className="quote10">
                 <span className="quote5 sidekick">
                   Work hard in silence, let the success be your noise.
                 </span>
@@ -147,8 +146,9 @@ class LandingPage extends Component {
               useful information to track to become a better athlete
             </div>
             <div className="section-text-mobile-version">
-              #WORD helps you to record and track your performances to become a better athlete. Enter your work out records and get a fast and accurate overview of your
-              progress.  
+              #WORD helps you to record and track your performances to become a
+              better athlete. Enter your work out records and get a fast and
+              accurate overview of your progress.
             </div>
             <div className="section-buttons">
               <button onClick={this.opensweetalert}>Sign up</button>
@@ -194,35 +194,28 @@ class LandingPage extends Component {
                 alt="Handstand-hold-position-man"
               />
 
-              <img src={image17} className="sliderimg" alt="Men doing gym movement on a chair" />
-    
+              <img
+                src={image17}
+                className="sliderimg"
+                alt="Men doing gym movement on a chair"
+              />
+
               <img
                 src={image21}
                 className="sliderimg"
                 alt="Men doing gym movement"
               />
-              {/* <img
-                src={image12}
-                className="sliderimg img12"
-                alt="Man doing sissi squat"
-              /> */}
+
               <img
                 src={image9}
                 className="sliderimg"
                 alt="Men doing lsit movement"
               />
-              {/* <img
-                src={image10}
-                className="sliderimg"
-                alt="Men doing sissi squat"
-              /> */}
               <img
                 src={image13}
                 className="sliderimg"
                 alt="Men doing back flip-"
               />
-
-              {/* <img src={image18} className="sliderimg" alt="Men doing bridge" /> */}
               <img
                 src={image14}
                 className="sliderimg"
@@ -249,8 +242,6 @@ class LandingPage extends Component {
                 src={hashtag}
                 alt="hashtag-symbol"
               ></img>
-              {/* <span className="aside-hashtag">#</span> */}
-
               <span className="aside-span-effect" data-fill="WORD">
                 WORD
               </span>
